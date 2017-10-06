@@ -1,0 +1,5 @@
+dn: ou=SUDOers,dc=lazyarea,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: SUDOers
+

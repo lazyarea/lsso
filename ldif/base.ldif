@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Domain
+#-----------------------------------------------------------
+dn: dc=lazyarea,dc=com
+objectClass: dcObject
+objectClass: organization
+dc: lazyarea
+o: Example Inc.
+
+#-----------------------------------------------------------
+# Manager (管理者エントリ)
+#-----------------------------------------------------------
+dn: cn=Manager,dc=lazyarea,dc=com
+objectClass: organizationalRole
+cn: Manager
+description: Directory Manager
+
+#-----------------------------------------------------------
+# People (ユーザーエントリ)
+#-----------------------------------------------------------
+dn: ou=People,dc=lazyarea,dc=com
+objectClass: organizationalUnit
+ou: People
+
+#-----------------------------------------------------------
+# Group (グループエントリ)
+#-----------------------------------------------------------
+dn: ou=Group,dc=lazyarea,dc=com
+objectClass: organizationalUnit
+ou: Group
+
+
