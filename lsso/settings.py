@@ -130,6 +130,7 @@ STATICFILES_DIRS = (
 # LDAP
 #----------------------
 LDAP_AUTH_URL = "ldap://localhost:389"
+LDAP_AUTH_PASSWD = "secret"
 LDAP_AUTH_USE_TLS = False
 LDAP_AUTH_SEARCH_BASE = "ou=people,dc=lazyarea,dc=com"
 LDAP_AUTH_OBJECT_CLASS = "inetOrgPerson"

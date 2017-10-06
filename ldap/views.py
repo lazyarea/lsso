@@ -3,14 +3,15 @@ from django.http import HttpResponse
 from django.template import loader
 from django.conf import settings
 
-import os
 import sys
-sys.path.append(os.path.join(os.path.dirname(__file__), 'lib'))
-from ldap.lib import ldapcli
+#from ldap.management.commands.ldapcli import *
+
 
 # Create your views here.
 def index(request):
-    ldapcli.sample()
+    #print(sys.path)
+    #l = ldapcli()
+    #sample()
     # return HttpResponse("Hello, world. You're at the news index.")
     latest_question_list = []
     template = loader.get_template('ldap/index.html')
