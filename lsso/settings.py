@@ -123,3 +123,27 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+#----------------------
+# LDAP
+#----------------------
+LDAP_AUTH_URL = "ldap://localhost:389"
+LDAP_AUTH_USE_TLS = False
+LDAP_AUTH_SEARCH_BASE = "ou=people,dc=lazyarea,dc=com"
+LDAP_AUTH_OBJECT_CLASS = "inetOrgPerson"
+LDAP_AUTH_USER_FIELDS = {
+    "username": "uid",
+    "first_name": "givenName",
+    "last_name": "sn",
+    "email": "mail",
+}
+LDAP_AUTH_USER_LOOKUP_FIELDS = ("username",)
+LDAP_AUTH_CLEAN_USER_DATA = "django_python3_ldap.utils.clean_user_data"
+LDAP_AUTH_SYNC_USER_RELATIONS = "django_python3_ldap.utils.sync_user_relations"
+LDAP_AUTH_FORMAT_SEARCH_FILTERS ="django_python3_ldap.utils.format_search_filters"
+LDAP_AUTH_FORMAT_USERNAME = "django_python3_ldap.utils.format_username_openldap"
+LDAP_AUTH_ACTIVE_DIRECTORY_DOMAIN = None
+LDAP_AUTH_CONNECTION_USERNAME = None
+LDAP_AUTH_CONNECTION_PASSWORD = None
+LDAP_AUTH_CONNECT_TIMEOUT = None
+LDAP_AUTH_RECEIVE_TIMEOUT = None
