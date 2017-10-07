@@ -129,6 +129,7 @@ STATICFILES_DIRS = (
 #----------------------
 # LDAP
 #----------------------
+LDAP_HOST = "localhost"
 LDAP_AUTH_URL = "ldap://localhost:389"
 LDAP_AUTH_PASSWD = "secret"
 LDAP_AUTH_USE_TLS = False
@@ -150,3 +151,4 @@ LDAP_AUTH_CONNECTION_USERNAME = None
 LDAP_AUTH_CONNECTION_PASSWORD = None
 LDAP_AUTH_CONNECT_TIMEOUT = None
 LDAP_AUTH_RECEIVE_TIMEOUT = None
+LDAP_MANAGER_DN = "cn=Manager,dc=lazyarea,dc=com"
