@@ -25,4 +25,5 @@ class Command(BaseCommand):
         c.bind()
         ret = c.add(dn, objclass, attr)
         c.unbind()
+        print(ret)
 #        return ret
