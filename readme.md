@@ -3,6 +3,8 @@
 ## Commands
 
 #### ldapsearch
+    python manage.py ldapsearch 'ou=People,dc=lazyarea,dc=com' '(objectClass=*)' '*' 5
+
 #### ldapadd
     python manage.py ldapadd cn=user1,ou=People,dc=lazyarea,dc=com \
     'top','account','posixAccount','shadowAccount','ldapPublicKey'
