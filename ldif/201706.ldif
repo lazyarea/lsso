@@ -14,11 +14,11 @@ dn: ou=People,dc=lazyarea,dc=com
 objectClass: organizationalUnit
 ou: People
 
-dn: ou=Group,dc=lazyarea,dc=com
+dn: ou=Groups,dc=lazyarea,dc=com
 objectClass: organizationalUnit
-ou: Group
+ou: Groups
 
-dn: cn=development,ou=Group,dc=lazyarea,dc=com
+dn: cn=development,ou=Groups,dc=lazyarea,dc=com
 objectClass: top
 objectClass: posixGroup
 cn: development
@@ -26,7 +26,7 @@ gidNumber: 10000
 memberUid: lazyarea
 memberUid: vagrant
 
-dn: cn=wheel,ou=Group,dc=lazyarea,dc=com
+dn: cn=wheel,ou=Groups,dc=lazyarea,dc=com
 objectClass: top
 objectClass: posixGroup
 cn: wheel
